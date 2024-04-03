@@ -1,0 +1,28 @@
+body{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+
+}
+
+button{
+    height: 70px;
+    width: 200px;
+    font-size: 30px;
+    background-color: yellow;
+    border: none;
+    border-radius: 32px;
+    justify-content: center;
+    justify-items: center;
+    transition: all 0.2s;
+    left: 50%;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+button:active {
+    width: 250px;
+    height: 90px;
+    font-size: 35px;
+}

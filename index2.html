@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        video{
+            position: relative;
+        }
+        #message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            display: none;
+        }
+    </style>
+</head>
+    <body>
+        <video id="rickroll" width="640" height="360" autoplay>
+            
+            <source src="lolll.mp4">
+            
+          </video>
+          <button onclick="playVideo()">Play this game!!!</button>
+          <div id="message">Bruhh!!! YOU GOT RICKROLLED :)</div>
+          <script>
+            function playVideo() {
+                var video = document.getElementById("rickroll");
+                video.muted = false;
+                video.play();
+
+                setTimeout(function () {
+                var message = document.getElementById("message");
+                message.style.display = "block";
+            }, Math.floor(Math.random() * 1000) + 1000); // Random time between 1000 and 2000 milliseconds
+        }
+            
+            
+          </script>
+    </body>
+</html>
